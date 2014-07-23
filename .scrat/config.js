@@ -4,7 +4,7 @@ var path = require('path');
 
 module.exports = {
   orgiRepo: 'FortAwesome/Font-Awesome',
-  ref: 'master',
+  ref: 'v4.1.0',
   target: path.resolve(__dirname, '..'),
   name: 'font-awesome',
   repo: 'scrat-team/font-awesome',
