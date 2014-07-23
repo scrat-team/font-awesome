@@ -1,0 +1,15 @@
+{
+  "name": "scrat-component-transformer",
+  "version": "0.1.1",
+  "description": "transform a github repo into installable scrat-component",
+  "private": true,
+  "dependencies": {
+    "co": "~3.0.6",
+    "write-to": "~1.1.1",
+    "graceful-fs": "~3.0.2",
+    "cogent": "~0.4.3",
+    "rimraf": "~2.2.8",
+    "decompress": "~0.2.3",
+    "mkdirp": "~0.5.0"
+  }
+}

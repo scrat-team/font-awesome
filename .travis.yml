@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- '0.11'
+before_install:
+- npm config set loglevel warn
+script:
+- node --harmony transformer/transform
+after_success:
+- git config --global user.email "hincubus@gmail.com"
+- git config --global user.name "Hinc Liu"
+- git remote set-url origin https://github.com/scrat-team/font-awesome.git
+- git config credential.helper "store --file=.git/credentials"
+- echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+- git checkout master
+- git add .
+- git commit -am "[ci skip]"
+- git push origin master
+branches:
+  only:
+  - master
+env:
+  global:
+  - secure: DX7WLtIqAQZgRvjCn/csGD7Co5fhx0CjdJdZzzBhZ1ZcqTDnOeUe57tffac28k77xIdta9LmjxRKJU0Ipnsc1LGu+rnmhWVjEjNMj1/eNncspUiZ88FghgG09SXjF3Tiz2b3HI/lzmZa/R1i+YaCoejkX0xG6FZ4MqohU82ZIKg=
