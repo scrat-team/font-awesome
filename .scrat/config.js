@@ -1,9 +1,11 @@
 'use strict';
 
+var path = require('path');
+
 module.exports = {
   orgiRepo: 'FortAwesome/Font-Awesome',
   ref: 'master',
-  target: __dirname,
+  target: path.resolve(__dirname, '..'),
   name: 'font-awesome',
   repo: 'scrat-team/font-awesome',
   description: 'a scrat-installable fork of FortAwesome/Font-Awesome',

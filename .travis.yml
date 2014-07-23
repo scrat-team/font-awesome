@@ -4,7 +4,7 @@ node_js:
 before_install:
 - npm config set loglevel warn
 script:
-- node --harmony transformer/transform
+- node --harmony .scrat/transform
 after_success:
 - git config --global user.email "hincubus@gmail.com"
 - git config --global user.name "Hinc Liu"
